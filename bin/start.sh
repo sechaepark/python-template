@@ -15,9 +15,17 @@ help_msg() {
   exit 1
 }
 
+if [ $# -ne 1 ]; then
+  help_msg
+fi
+
 if [ -f $PID_FILE ]; then
   PID=$(cat $PID_FILE)
 fi
+
+echo "--------------------------------------------------------------------------------"
+echo "os environment variable (PYTHON_TEMPLATE_ENV) : $PYTHON_TEMPLATE_ENV"
+echo "--------------------------------------------------------------------------------"
 
 start_server() {
   if [ -f $PID_FILE ]; then
