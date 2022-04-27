@@ -8,7 +8,7 @@ local_config: Dict = {
         'redis': {
             'main': {
                 'host': '127.0.0.1',
-                'port': '6379',
+                'port': 6379,
                 'username': '',
                 'password': '',
                 'db': 0,
@@ -18,16 +18,16 @@ local_config: Dict = {
         },
         'datasource': {
             'main_write': {
-                'host': '',
-                'port': '',
+                'host': '127.0.0.1',
+                'port': 3306,
                 'username': '',
                 'password': '',
                 'db': '',
                 'charset': 'utf-8',
             },
             'main_read': {
-                'host': '',
-                'port': '',
+                'host': '127.0.0.1',
+                'port': 3306,
                 'username': '',
                 'password': '',
                 'db': '',

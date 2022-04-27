@@ -14,7 +14,7 @@ class SchedulerConfig(object):
 @dataclass
 class ComServerDto(object):
     host: str
-    port: str
+    port: int
     username: str
     password: str
 

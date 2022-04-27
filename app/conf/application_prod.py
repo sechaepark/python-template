@@ -8,7 +8,7 @@ prod_config: Dict = {
         'redis': {
             'main': {
                 'host': '127.0.0.1',
-                'port': '6379',
+                'port': 6379,
                 'username': '',
                 'password': '',
                 'db': 0,
@@ -19,7 +19,7 @@ prod_config: Dict = {
         'datasource': {
             'main_write': {
                 'host': '',
-                'port': '',
+                'port': 3306,
                 'username': '',
                 'password': '',
                 'db': '',
@@ -27,7 +27,7 @@ prod_config: Dict = {
             },
             'main_read': {
                 'host': '',
-                'port': '',
+                'port': 3306,
                 'username': '',
                 'password': '',
                 'db': '',
